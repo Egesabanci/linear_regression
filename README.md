@@ -12,4 +12,4 @@ linear (parent file):
 - test.py
 
 Sample Image:
-https://github.com/Egesabanci/linear_regression/blob/master/sample%20image/sample%20graph.png
+![SAMPLE IMAGE](https://github.com/Egesabanci/linear_regression/blob/master/sample%20image/sample%20graph.png)
