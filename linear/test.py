@@ -2,7 +2,7 @@ import random
 import numpy as np
 
 sample_set = [x for x in range(75)]
-dec_inc = [random.uniform(1, 20) for _ in range(10)]
+dec_inc = [random.uniform(-10, 10) for _ in range(10)]
 
 # sample train and test set
 x_train = [i + random.choice(dec_inc) for i in sample_set]
