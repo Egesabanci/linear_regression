@@ -11,5 +11,5 @@ linear (parent file):
 - plot.py
 - test.py
 
-
-
+Sample Image:
+https://github.com/Egesabanci/linear_regression/blob/master/sample%20image/sample%20graph.png
