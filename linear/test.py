@@ -21,7 +21,7 @@ model.fit(x_train, y_train)
 print("MODEL COEF:", model.b1,
 	  "\nMODEL INTERCEPT:", model.b0,
 	  "\nMODEL LOSS:", np.sqrt(MSE(y_test, [model.predict(x) for x in x_test])))
-		# model loss: according to the test sets
+	  # model loss: according to the test sets
 
 # plot the model with test sets
 from plot import plot_graph # from plot.py
