@@ -1,10 +1,11 @@
 import matplotlib.pyplot as plt
 
 def plot_graph(x : list, y_true : list, predict : list,
-			   x_label : str, y_label : str,
-			   title : str, grid : bool, size : tuple):
+	       x_label : str, y_label : str, title : str,
+	       grid : bool, size : tuple):
 
-	assert len(y_true) == len(predict) # size control
+	assert len(y_true) == len(predict)
+	assert len(y_true) == len(x)
 
 	plt.figure(figsize = size)
 	plt.grid(grid)
