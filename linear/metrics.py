@@ -1,5 +1,4 @@
 import statistics as st
-from statistic import correlation
 
 def MSE(y_true, y_pred):
 	return st.mean([(y_true[x] - y_pred[x]) ** 2 for x in range(len(y_true))])
