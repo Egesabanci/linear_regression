@@ -4,14 +4,14 @@ Very basic, simple and comfortable "Linear Regressor" with couple lines of code.
 
 ### Installation
 ```
-pip install linear_reg
+pip install linreg
 ```
 
 ### Usage
 
 ```python
 # import Linear Regressor
-from linear_reg import LinearRegressor
+from linreg import LinearRegressor
 
 # sample data
 x_train = numpy.array
@@ -25,7 +25,7 @@ model.fit(x_train, y_train)
 ### Plot Model
 ```python
 # import plot function
-from linear_reg import plot_graph
+from linreg import plot_graph
 
 # sample test data
 x_test = numpy.array
