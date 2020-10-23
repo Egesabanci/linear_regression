@@ -1,14 +1,38 @@
 # Linear Regression Module
 
-*Very basic, simple and comfortable "Linear Regression Model Creator" with couple lines of code...*
+Very basic, simple and comfortable "Linear Regression Model Creator" with couple lines of code...
 
-**Files:**
+### Installation
+```
+pip install linear
+```
 
-linear (parent file):
-- linear.py
-- metrics.py
-- statistic.py
-- plot.py
-- test.py
+### Usage
 
-![SAMPLE IMAGE](https://github.com/Egesabanci/linear_regression/blob/master/sample%20image/sample%20graph.png)
+```python
+# import Linear Regressor
+from linear import LinearRegressor
+
+# sample data
+x_train = numpy.array
+y_train = numpy.array
+
+# create model and fit with data
+model = LinearRegressor()
+model.fit(x_train, y_train)
+```
+
+### Plot Created Model
+```python
+# import plot function
+from linear import plot_graph
+
+# sample test data
+x_test = numpy.array
+y_test = numpy.array
+
+# plot the graph
+plot_graph(x_test, y_test, [model.predict(x) for x in x_test],
+		   x_label = "Sample X", y_label = "Sample Y", title = "Test",
+		   grid = True, size = (10, 5))
+```
