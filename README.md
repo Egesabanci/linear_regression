@@ -22,7 +22,7 @@ model = LinearRegressor()
 model.fit(x_train, y_train)
 ```
 
-### Plot Created Model
+### Plot Model
 ```python
 # import plot function
 from linear import plot_graph
