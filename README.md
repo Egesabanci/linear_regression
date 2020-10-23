@@ -11,7 +11,7 @@ pip install linear
 
 ```python
 # import Linear Regressor
-from linear import LinearRegressor
+from linear_reg import LinearRegressor
 
 # sample data
 x_train = numpy.array
@@ -25,7 +25,7 @@ model.fit(x_train, y_train)
 ### Plot Model
 ```python
 # import plot function
-from linear import plot_graph
+from linear_reg import plot_graph
 
 # sample test data
 x_test = numpy.array
