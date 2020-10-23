@@ -1,8 +1,8 @@
 import numpy as np 
 import statistics as st
 
-from metrics import MSE, MAE
-from statistic import correlation, standard_deviation
+from .metrics import MSE, MAE
+from .statistic import correlation, standard_deviation
 
 class LinearRegressor(object):
 
