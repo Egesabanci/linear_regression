@@ -1,10 +1,10 @@
 # Linear Regression Module
 
-Very basic, simple and comfortable "Linear Regression Model Creator" with couple lines of code...
+Very basic, simple and comfortable "Linear Regressor" with couple lines of code...
 
 ### Installation
 ```
-pip install linear
+pip install linear_reg
 ```
 
 ### Usage
