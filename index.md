@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# Linear Regression Module
 
-You can use the [editor on GitHub](https://github.com/Egesabanci/linreg/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Very basic, simple and comfortable "Linear Regressor" with couple lines of code...
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Installation
+```
+pip install linreg
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Sample Usage
 
-### Jekyll Themes
+```python
+# import Linear Regressor
+from linreg import LinearRegressor
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Egesabanci/linreg/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# sample data
+x_train = numpy.array
+y_train = numpy.array
 
-### Support or Contact
+# create model and fit with data
+model = LinearRegressor()
+model.fit(x_train, y_train)
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Plot Model
+```python
+# import plot function
+from linreg import plot_graph
+
+# sample test data
+x_test = numpy.array
+y_test = numpy.array
+
+# plot the graph
+plot_graph(x_test, y_test, [model.predict(x) for x in x_test],
+		   x_label = "Sample X", y_label = "Sample Y", title = "Test",
+		   grid = True, size = (10, 5))
+```
